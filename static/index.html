@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumi-IA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <header class="topo">
+    <img class="topo-icone" src="/static/img/cerebro.png" alt="">
+    <h1 class="logo">LUMI-IA</h1>
+    <span class="subtitulo">SUA COMPANHEIRA DE ESTUDOS</span>
+    <span class="modelo">gemini-3.5-flash-lite</span>
+  </header>
+ 
+  <div class="app">
+    <aside class="lateral">
+      <h2 class="lateral-titulo">Lumi - IA</h2>
+      <nav class="menu">
+        <button class="menu-btn" id="btn-novo" type="button"><img src="/static/img/novo-chat.png" alt="">Novo Chat</button>
+        <button class="menu-btn" data-em-breve type="button"><img src="/static/img/historico.png" alt="">Histórico</button>
+        <button class="menu-btn" data-em-breve type="button"><img src="/static/img/resultados.png" alt="">Resultados</button>
+        <button class="menu-btn" data-em-breve type="button"><img src="/static/img/configuracoes.png" alt="">Configurações</button>
+      </nav>
+      <img class="mascote" src="/static/img/hello-kitty.png" alt="">
+      <div class="conta"><img src="/static/img/usuario.png" alt=""><span>Sua conta</span><small>Plano</small></div>
+    </aside>
+ 
+    <main id="principal" class="inicio">
+      <h2 class="saudacao">Olá! Eu sou a Lumi. O que você quer aprender hoje?</h2>
+      <section id="mensagens" class="mensagens" aria-live="polite"></section>
+      <form id="form" class="campo" autocomplete="off">
+        <input id="entrada" type="text" placeholder="O que vamos estudar hoje?" aria-label="Mensagem">
+        <button type="submit" aria-label="Enviar"><img src="/static/img/enviar.png" alt=""></button>
+      </form>
+    </main>
+  </div>
+ 
+  <script src="/static/script.js"></script>
+</body>
+</html>
